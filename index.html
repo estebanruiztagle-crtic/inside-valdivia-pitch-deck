@@ -59,7 +59,7 @@
   .s10-cbody{font-family:var(--sans);font-weight:300;font-size:22px;line-height:1.36;color:rgba(255,255,255,0.82);margin-top:16px}
 
   /* slide 11 */
-  .s11-card{border-radius:30px;padding:38px;display:flex;flex-direction:column;background:rgba(255,255,255,0.055);box-shadow:inset 0 1px 1px rgba(255,255,255,0.16)}
+  .s11-card{position:relative;overflow:hidden;border-radius:30px;padding:38px;display:flex;flex-direction:column;background:rgba(255,255,255,0.055);box-shadow:inset 0 1px 1px rgba(255,255,255,0.16)}
   .s11-chip{border-radius:9999px;padding:8px 18px;font-family:var(--sans);font-size:19px;color:#fff;background:rgba(255,255,255,0.08);box-shadow:inset 0 0 0 1px rgba(255,255,255,0.2)}
 
   /* slide 12 */
@@ -142,7 +142,7 @@
     <div style="align-self:flex-end;text-align:right;max-width:900px">
       <div class="eyebrow" style="margin-bottom:26px">// Experiencia Full Dome</div>
       <h1 style="margin:0;font-family:var(--serif);font-style:italic;font-weight:400;font-size:108px;line-height:0.88;letter-spacing:-0.045em;text-wrap:pretty">El territorio<br>se escucha</h1>
-      <p style="margin:34px 0 0;margin-left:auto;max-width:760px;font-family:var(--sans);font-weight:300;font-size:26px;line-height:1.42;color:var(--fg-soft);text-wrap:pretty"><em style="font-family:var(--serif);font-style:italic;color:var(--signal)">Inside: Valdivia</em> — concierto en vivo, proyección Full Dome y audio espacial, dentro de un domo de 13 metros.</p>
+      <p style="margin:34px 0 0;margin-left:auto;max-width:760px;font-family:var(--sans);font-weight:300;font-size:26px;line-height:1.42;color:var(--fg-soft);text-wrap:pretty"><em style="font-family:var(--serif);font-style:italic;color:var(--signal)">Inside: Valdivia</em> — concierto en vivo, proyección Full Dome y audio espacial, dentro de un domo de 27 metros.</p>
     </div>
     <div style="display:flex;align-items:center;justify-content:space-between">
       <div style="display:flex;align-items:center;gap:18px">
@@ -462,29 +462,37 @@
     <h2 style="margin:20px 0 0;font-family:var(--serif);font-style:italic;font-weight:400;font-size:84px;line-height:0.92;letter-spacing:-0.035em;max-width:1500px">Dos trayectorias premiadas, una misma apuesta</h2>
     <div style="flex:1;min-height:0;display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:36px">
       <div class="s11-card">
-        <div style="display:flex;align-items:center;justify-content:space-between;gap:24px">
-          <img src="assets/logo-crtic-sm.png" alt="CRTIC" style="height:56px;width:auto;display:block">
-          <div style="font-family:var(--serif);font-style:italic;font-size:56px;line-height:1;color:rgba(255,255,255,0.95)">2024</div>
-        </div>
-        <div style="flex:1;min-height:14px"></div>
-        <div style="font-family:var(--sans);font-weight:600;font-size:42px;line-height:1.04;letter-spacing:-0.01em">Premio Avonni, categoría Cultura</div>
-        <p style="margin:16px 0 20px;font-size:23px;font-weight:300;line-height:1.32;color:rgba(255,255,255,0.88)">Es el principal reconocimiento a la innovación en Chile. CRTIC lo obtuvo por instalar la tecnocreatividad en la industria cultural.</p>
-        <div style="display:flex;flex-wrap:wrap;gap:9px">
-          <span class="s11-chip">Infraestructura tecnocreativa</span>
-          <span class="s11-chip">Full Dome · 360° · audio inmersivo</span>
+        <img src="assets/premio-avonni.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 22%">
+        <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.5) 34%,rgba(0,0,0,0.92) 68%,rgba(0,0,0,0.97) 100%)"></div>
+        <div style="position:relative;z-index:1;height:100%;display:flex;flex-direction:column">
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:24px">
+            <img src="assets/logo-crtic-sm.png" alt="CRTIC" style="height:56px;width:auto;display:block">
+            <div style="font-family:var(--serif);font-style:italic;font-size:56px;line-height:1;color:rgba(255,255,255,0.95)">2024</div>
+          </div>
+          <div style="flex:1;min-height:14px"></div>
+          <div style="font-family:var(--sans);font-weight:600;font-size:42px;line-height:1.04;letter-spacing:-0.01em">Premio Avonni, categoría Cultura</div>
+          <p style="margin:16px 0 20px;font-size:23px;font-weight:300;line-height:1.32;color:rgba(255,255,255,0.88)">Es el principal reconocimiento a la innovación en Chile. CRTIC lo obtuvo por instalar la tecnocreatividad en la industria cultural.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:9px">
+            <span class="s11-chip">Infraestructura tecnocreativa</span>
+            <span class="s11-chip">Full Dome · 360° · audio inmersivo</span>
+          </div>
         </div>
       </div>
       <div class="s11-card">
-        <div style="display:flex;align-items:center;justify-content:space-between;gap:24px">
-          <img src="assets/logo-cnc-blanco.png" alt="Clásica No Convencional" style="height:64px;width:auto;display:block;flex:none">
-          <div style="font-family:var(--serif);font-style:italic;font-size:56px;line-height:1;color:rgba(255,255,255,0.95)">2025</div>
-        </div>
-        <div style="flex:1;min-height:14px"></div>
-        <div style="font-family:var(--sans);font-weight:600;font-size:42px;line-height:1.04;letter-spacing:-0.01em">Innovation Award, Classical:NEXT, Berlín</div>
-        <p style="margin:16px 0 20px;font-size:23px;font-weight:300;line-height:1.32;color:rgba(255,255,255,0.88)">Único proyecto latinoamericano premiado en la mayor feria mundial de música clásica, junto a Scottish Opera y Opera Aperta (Ucrania).</p>
-        <div style="display:flex;flex-wrap:wrap;gap:9px">
-          <span class="s11-chip">Curatoría y producción musical</span>
-          <span class="s11-chip">Audiencias nuevas</span>
+        <img src="assets/premio-classical-next.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 25%">
+        <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.5) 34%,rgba(0,0,0,0.92) 68%,rgba(0,0,0,0.97) 100%)"></div>
+        <div style="position:relative;z-index:1;height:100%;display:flex;flex-direction:column">
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:24px">
+            <img src="assets/logo-cnc-blanco.png" alt="Clásica No Convencional" style="height:64px;width:auto;display:block;flex:none">
+            <div style="font-family:var(--serif);font-style:italic;font-size:56px;line-height:1;color:rgba(255,255,255,0.95)">2025</div>
+          </div>
+          <div style="flex:1;min-height:14px"></div>
+          <div style="font-family:var(--sans);font-weight:600;font-size:42px;line-height:1.04;letter-spacing:-0.01em">Innovation Award, Classical:NEXT, Berlín</div>
+          <p style="margin:16px 0 20px;font-size:23px;font-weight:300;line-height:1.32;color:rgba(255,255,255,0.88)">Único proyecto latinoamericano premiado en la mayor feria mundial de música clásica, junto a Scottish Opera y Opera Aperta (Ucrania).</p>
+          <div style="display:flex;flex-wrap:wrap;gap:9px">
+            <span class="s11-chip">Curatoría y producción musical</span>
+            <span class="s11-chip">Audiencias nuevas</span>
+          </div>
         </div>
       </div>
     </div>
