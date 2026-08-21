@@ -281,7 +281,7 @@
 
 <section data-label="08 Dentro del domo" style="background:#000;color:#fff;font-family:var(--sans);overflow:hidden">
   <div style="position:absolute;inset:0;background:#000 url('assets/fulldome-poster.jpg') center / cover no-repeat">
-    <video autoplay muted loop playsinline disableremoteplayback poster="assets/fulldome-poster.jpg" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+    <video id="video-dentro-del-domo" loop playsinline disableremoteplayback poster="assets/fulldome-poster.jpg" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
       <source src="assets/insidevaldivia_fulldome.mp4" type="video/mp4">
     </video>
   </div>
@@ -672,14 +672,27 @@
 <script src="./deck-stage.js"></script>
 <script>
   document.addEventListener('slidechange', (e) => {
-    const audio = document.getElementById('audio-hilo-conductor');
-    if (!audio) return;
     const label = e.detail && e.detail.slide && e.detail.slide.dataset.label;
-    if (label && label.startsWith('05 ')) {
-      audio.currentTime = 0;
-      audio.play().catch(() => {});
-    } else {
-      audio.pause();
+
+    const audio = document.getElementById('audio-hilo-conductor');
+    if (audio) {
+      if (label && label.startsWith('05 ')) {
+        audio.currentTime = 0;
+        audio.play().catch(() => {});
+      } else {
+        audio.pause();
+      }
+    }
+
+    const domoVideo = document.getElementById('video-dentro-del-domo');
+    if (domoVideo) {
+      if (label && label.startsWith('08 ')) {
+        domoVideo.muted = false;
+        domoVideo.currentTime = 0;
+        domoVideo.play().catch(() => { domoVideo.muted = true; domoVideo.play().catch(() => {}); });
+      } else {
+        domoVideo.pause();
+      }
     }
   });
 </script>
