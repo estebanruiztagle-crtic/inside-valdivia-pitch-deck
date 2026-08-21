@@ -173,6 +173,13 @@
 </section>
 
 <section data-label="05 El hilo conductor" style="background:#000;color:#fff;font-family:var(--sans);overflow:hidden">
+  <audio id="audio-hilo-conductor" loop preload="auto">
+    <source src="assets/extracto_hummel_14s.mp3" type="audio/mpeg">
+  </audio>
+  <div style="position:absolute;left:96px;top:56px;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.06);box-shadow:inset 0 0 0 1px rgba(255,255,255,0.14);border-radius:9999px;padding:9px 18px 9px 14px">
+    <span style="width:8px;height:8px;border-radius:9999px;background:var(--signal)"></span>
+    <span style="font-family:var(--mono);font-size:15px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.7)">Audio — extracto Op. 85</span>
+  </div>
   <div style="position:relative;height:100%;display:grid;grid-template-columns:1.12fr 0.88fr;align-items:center;padding:96px;gap:40px">
     <div>
       <div class="eyebrow">// El hilo conductor</div>
@@ -663,5 +670,18 @@
 
 </deck-stage>
 <script src="./deck-stage.js"></script>
+<script>
+  document.addEventListener('slidechange', (e) => {
+    const audio = document.getElementById('audio-hilo-conductor');
+    if (!audio) return;
+    const label = e.detail && e.detail.slide && e.detail.slide.dataset.label;
+    if (label && label.startsWith('05 ')) {
+      audio.currentTime = 0;
+      audio.play().catch(() => {});
+    } else {
+      audio.pause();
+    }
+  });
+</script>
 </body>
 </html>
