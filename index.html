@@ -302,162 +302,42 @@
 
     <div style="flex:none;margin-top:30px;padding-top:24px;border-top:1px solid rgba(255,255,255,0.14)">
       <div class="eyebrow" style="font-size:17px">// Lo que el público no ve</div>
-      <svg viewBox="0 0 1728 232" style="width:100%;height:232px;display:block;margin-top:4px">
+      <svg viewBox="0 0 1728 300" style="width:100%;height:300px;display:block;margin-top:2px">
         <defs>
-          <linearGradient id="s6fadeL" gradientUnits="userSpaceOnUse" x1="310" y1="0" x2="782" y2="0">
-            <stop offset="0" stop-color="#fff" stop-opacity="0.55"/>
-            <stop offset="1" stop-color="#fff" stop-opacity="0"/>
-          </linearGradient>
-          <linearGradient id="s6fadeR" gradientUnits="userSpaceOnUse" x1="1418" y1="0" x2="946" y2="0">
-            <stop offset="0" stop-color="#fff" stop-opacity="0.55"/>
-            <stop offset="1" stop-color="#fff" stop-opacity="0"/>
-          </linearGradient>
-          <radialGradient id="s6glow" gradientUnits="userSpaceOnUse" cx="864" cy="116" r="150">
-            <stop offset="0" stop-color="#c6f24e" stop-opacity="0.13"/>
+          <radialGradient id="s6Glow" gradientUnits="userSpaceOnUse" cx="864" cy="150" r="200">
+            <stop offset="0" stop-color="#c6f24e" stop-opacity="0.16"/>
             <stop offset="1" stop-color="#c6f24e" stop-opacity="0"/>
           </radialGradient>
-          <g id="s6icoDome" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 34 A18 16 0 0 1 42 34"/><path d="M2 34 H46"/><path d="M24 34 V19"/><path d="M17 24 L24 19 L31 24"/></g>
-          <g id="s6icoAudio" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="2.8" fill="rgba(255,255,255,0.55)" stroke="none"/><path d="M14 16 A12 12 0 0 0 14 32"/><path d="M7 9 A21 21 0 0 0 7 39"/><path d="M34 16 A12 12 0 0 1 34 32"/><path d="M41 9 A21 21 0 0 1 41 39"/></g>
-          <g id="s6icoVis" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="11" width="36" height="26" rx="3.5"/><circle cx="16" cy="20" r="2.4" fill="rgba(255,255,255,0.55)" stroke="none"/><path d="M11 33 L21 24 L27 29 L37 18"/></g>
-          <g id="s6icoLuz" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 7 H30 L34 19 H14 Z"/><path d="M15 22 L9 40"/><path d="M24 22 L24 41"/><path d="M33 22 L39 40"/></g>
         </defs>
 
-        <circle cx="864" cy="116" r="150" fill="url(#s6glow)"/>
+        <ellipse cx="864" cy="150" rx="200" ry="60" fill="url(#s6Glow)"/>
 
-        <g stroke="rgba(255,255,255,0.55)">
-          <g transform="translate(40,57) scale(0.8)"><use href="#s6icoDome"/></g>
-          <g transform="translate(40,145) scale(0.8)"><use href="#s6icoAudio"/></g>
-          <g transform="translate(1650,57) scale(0.8)"><use href="#s6icoVis"/></g>
-          <g transform="translate(1650,145) scale(0.8)"><use href="#s6icoLuz"/></g>
+        <g fill="none" stroke="rgba(255,255,255,0.26)">
+          <ellipse cx="864" cy="150" rx="620" ry="130" stroke-width="1.5"/>
+          <ellipse cx="864" cy="150" rx="460" ry="100" stroke-width="1.4"/>
+          <ellipse cx="864" cy="150" rx="300" ry="70" stroke-width="1.3"/>
+          <ellipse cx="864" cy="150" rx="145" ry="42" stroke-width="1.2"/>
         </g>
 
-        <g font-family="'IBM Plex Mono', monospace" font-size="18" letter-spacing="1.6" fill="rgba(255,255,255,0.52)">
-          <text x="94" y="82">FULL DOME</text>
-          <text x="94" y="170">AUDIO INMERSIVO</text>
-          <text x="1636" y="82" text-anchor="end">VISUALES</text>
-          <text x="1636" y="170" text-anchor="end">LUZ DMX</text>
+        <g font-family="'IBM Plex Mono', monospace" font-size="17" letter-spacing="1.5" fill="rgba(255,255,255,0.6)" text-anchor="middle">
+          <text x="324" y="156">FULL DOME</text>
+          <text x="484" y="156">VISUALES</text>
+          <text x="641" y="156">LUZ DMX</text>
+          <text x="790" y="156">AUDIO</text>
         </g>
 
-        <g fill="none" stroke-linecap="round">
-          <line x1="310" y1="76" x2="782" y2="76" stroke="url(#s6fadeL)" stroke-width="1.6"/>
-          <line x1="310" y1="85" x2="782" y2="85" stroke="url(#s6fadeL)" stroke-width="1.3" stroke-dasharray="3 9"/>
-          <line x1="310" y1="164" x2="782" y2="164" stroke="url(#s6fadeL)" stroke-width="1.6"/>
-          <line x1="310" y1="173" x2="782" y2="173" stroke="url(#s6fadeL)" stroke-width="1.3" stroke-dasharray="3 9"/>
-          <line x1="1418" y1="76" x2="946" y2="76" stroke="url(#s6fadeR)" stroke-width="1.6"/>
-          <line x1="1418" y1="85" x2="946" y2="85" stroke="url(#s6fadeR)" stroke-width="1.3" stroke-dasharray="3 9"/>
-          <line x1="1418" y1="164" x2="946" y2="164" stroke="url(#s6fadeR)" stroke-width="1.6"/>
-          <line x1="1418" y1="173" x2="946" y2="173" stroke="url(#s6fadeR)" stroke-width="1.3" stroke-dasharray="3 9"/>
-        </g>
-
-        <g stroke="var(--signal)" stroke-width="3.2" stroke-linecap="round" fill="none">
-          <circle cx="864" cy="56" r="13"/>
-          <path d="M864 73 V134"/>
-          <path d="M835 96 H893"/>
-          <path d="M864 134 L845 184"/>
-          <path d="M864 134 L883 184"/>
-        </g>
-      </svg>
-      <div style="margin-top:2px;font-family:var(--mono);font-size:20px;letter-spacing:0.12em;text-transform:uppercase;color:var(--signal);text-align:center">Cuatro sistemas. Ninguno visible. Queda una persona.</div>
-    </div>
-  </div>
-  <div class="folio" style="position:absolute;right:64px;bottom:34px">06 / 15</div>
-</section>
-
-<section data-label="06 Tres momentos · VARIANTE ANILLOS" data-deck-skip style="background:#000;color:#fff;font-family:var(--sans);overflow:hidden">
-  <div style="position:relative;height:100%;display:flex;flex-direction:column;padding:96px">
-    <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:60px">
-      <div>
-        <div class="eyebrow" style="margin-bottom:24px">// La experiencia</div>
-        <h2 style="margin:0;font-family:var(--serif);font-style:italic;font-weight:400;font-size:100px;line-height:0.9;letter-spacing:-0.04em">Tres momentos</h2>
-      </div>
-      <p style="margin:0;max-width:600px;font-family:var(--sans);font-weight:300;font-size:25px;line-height:1.4;color:rgba(255,255,255,0.75)">Un arco emocional en tres tiempos: preparar el cuerpo, abrir el territorio, cerrar en comunidad.</p>
-    </div>
-    <div style="flex:1;display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:52px;min-height:0">
-      <div class="s6-card">
-        <div class="s6-num">01</div>
-        <div class="s6-ctitle">Recepción</div>
-        <div class="s6-cbody">Gastronomía local, paisaje sonoro y ambientación antes del domo.</div>
-        <div style="display:flex;flex-wrap:wrap;gap:9px">
-          <span class="s6-chip">Gastronomía</span><span class="s6-chip">Paisaje sonoro</span>
-        </div>
-      </div>
-      <div class="s6-card" style="position:relative;z-index:2;background:rgba(198,242,78,0.08);box-shadow:inset 0 0 0 1.6px rgba(198,242,78,0.55),0 24px 60px rgba(198,242,78,0.16);transform:translateY(-16px)">
-        <div style="display:flex;align-items:center;justify-content:space-between">
-          <div class="s6-num" style="color:var(--signal)">02</div>
-          <span style="background:var(--signal);color:#000;border-radius:9999px;padding:5px 14px;font-family:var(--sans);font-size:18px;font-weight:600">Núcleo</span>
-        </div>
-        <div class="s6-ctitle" style="color:var(--signal)">Concierto inmersivo</div>
-        <div class="s6-cbody">Interpretación en vivo, visuales Full Dome y audio inmersivo sincronizado.</div>
-        <div style="display:flex;flex-wrap:wrap;gap:9px">
-          <span class="s6-chip">Música en vivo</span>
-        </div>
-      </div>
-      <div class="s6-card">
-        <div class="s6-num">03</div>
-        <div class="s6-ctitle">Encuentro</div>
-        <div class="s6-cbody">Un cierre como celebración: el recorrido se comparte en comunidad.</div>
-        <div style="display:flex;flex-wrap:wrap;gap:9px">
-          <span class="s6-chip">Celebración</span><span class="s6-chip">Vinculación</span>
-        </div>
-      </div>
-    </div>
-
-    <div style="flex:none;margin-top:30px;padding-top:24px;border-top:1px solid rgba(255,255,255,0.14)">
-      <div class="eyebrow" style="font-size:17px">// Lo que el público no ve</div>
-      <svg viewBox="0 0 1728 232" style="width:100%;height:232px;display:block;margin-top:4px">
-        <defs>
-          <radialGradient id="s6bGlow" gradientUnits="userSpaceOnUse" cx="864" cy="114" r="130">
-            <stop offset="0" stop-color="#c6f24e" stop-opacity="0.14"/>
-            <stop offset="1" stop-color="#c6f24e" stop-opacity="0"/>
-          </radialGradient>
-          <g id="s6bDome" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 34 A18 16 0 0 1 42 34"/><path d="M2 34 H46"/><path d="M24 34 V19"/><path d="M17 24 L24 19 L31 24"/></g>
-          <g id="s6bAudio" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="2.8" fill="rgba(255,255,255,0.55)" stroke="none"/><path d="M14 16 A12 12 0 0 0 14 32"/><path d="M7 9 A21 21 0 0 0 7 39"/><path d="M34 16 A12 12 0 0 1 34 32"/><path d="M41 9 A21 21 0 0 1 41 39"/></g>
-          <g id="s6bVis" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="11" width="36" height="26" rx="3.5"/><circle cx="16" cy="20" r="2.4" fill="rgba(255,255,255,0.55)" stroke="none"/><path d="M11 33 L21 24 L27 29 L37 18"/></g>
-          <g id="s6bLuz" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 7 H30 L34 19 H14 Z"/><path d="M15 22 L9 40"/><path d="M24 22 L24 41"/><path d="M33 22 L39 40"/></g>
-        </defs>
-
-        <circle cx="864" cy="114" r="130" fill="url(#s6bGlow)"/>
-
-        <g fill="none" stroke="rgba(255,255,255,0.22)">
-          <circle cx="864" cy="114" r="106" stroke-width="1.5"/>
-          <circle cx="864" cy="114" r="85" stroke-width="1.4"/>
-          <circle cx="864" cy="114" r="64" stroke-width="1.3"/>
-          <circle cx="864" cy="114" r="43" stroke-width="1.2"/>
-        </g>
-
-        <g stroke="rgba(255,255,255,0.24)" stroke-width="1.2" fill="none">
-          <path d="M789 39 H700"/>
-          <path d="M804 174 H700"/>
-          <path d="M909 69 H1028"/>
-          <path d="M894 144 H1028"/>
-        </g>
-
-        <g stroke="rgba(255,255,255,0.55)">
-          <g transform="translate(526,20) scale(0.8)"><use href="#s6bDome"/></g>
-          <g transform="translate(537,155) scale(0.8)"><use href="#s6bVis"/></g>
-          <g transform="translate(1142,50) scale(0.8)"><use href="#s6bLuz"/></g>
-          <g transform="translate(1240,125) scale(0.8)"><use href="#s6bAudio"/></g>
-        </g>
-
-        <g font-family="'IBM Plex Mono', monospace" font-size="18" letter-spacing="1.6" fill="rgba(255,255,255,0.52)">
-          <text x="688" y="45" text-anchor="end">FULL DOME</text>
-          <text x="688" y="180" text-anchor="end">VISUALES</text>
-          <text x="1040" y="75">LUZ DMX</text>
-          <text x="1040" y="150">AUDIO INMERSIVO</text>
-        </g>
-
-        <g stroke="var(--signal)" stroke-width="2.6" stroke-linecap="round" fill="none">
-          <circle cx="864" cy="98" r="7"/>
-          <path d="M864 107 V127"/>
-          <path d="M851 114 H877"/>
-          <path d="M864 127 L855 141"/>
-          <path d="M864 127 L873 141"/>
+        <g stroke="var(--signal)" stroke-width="3" stroke-linecap="round" fill="none">
+          <circle cx="864" cy="124" r="9"/>
+          <path d="M864 135 V164"/>
+          <path d="M849 146 H879"/>
+          <path d="M864 164 L853 186"/>
+          <path d="M864 164 L875 186"/>
         </g>
       </svg>
       <div style="margin-top:2px;font-family:var(--mono);font-size:20px;letter-spacing:0.12em;text-transform:uppercase;color:var(--signal);text-align:center">Cuatro sistemas envuelven a una persona. Solo ella está en vivo.</div>
     </div>
   </div>
-  <div class="folio" style="position:absolute;right:64px;bottom:34px">06 / 15 · VARIANTE</div>
+  <div class="folio" style="position:absolute;right:64px;bottom:34px">06 / 15</div>
 </section>
 
 <section data-label="07 Arquitectura de la obra" style="background:#000;color:#fff;font-family:var(--sans);overflow:hidden">
